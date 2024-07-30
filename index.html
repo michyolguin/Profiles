@@ -6,7 +6,7 @@
     <style>
         @font-face {
             font-family: 'Trueno SemiBold';
-            src: url('https://github.com/michyolguin/Profiles/blob/main/TruenoSBd.otf') format('woff');
+            src: url('https://raw.githubusercontent.com/michyolguin/Profiles/main/fonts/Trueno-SemiBold.woff') format('woff');
         }
         body {
             font-family: 'Trueno SemiBold', Arial, sans-serif;
@@ -32,31 +32,32 @@
             display: flex;
             flex-direction: column;
         }
+        .profile .top-section {
+            display: flex;
+        }
         .profile img {
-            width: 100%;
+            width: 50%;
             height: auto;
         }
-        .profile .content {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 10px;
-        }
         .profile .name {
+            padding: 10px;
             font-size: 18px;
             font-weight: bold;
             text-transform: uppercase;
             width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
         }
         .profile .name a {
             color: black;
             text-decoration: none;
         }
         .profile .description {
+            padding: 10px;
             font-size: 14px;
             background-color: #fff;
-            width: 50%;
-            padding-left: 10px;
         }
     </style>
     <title>Profile Cards</title>
@@ -64,34 +65,34 @@
 <body>
     <div class="profile-container">
         <div class="profile">
-            <img src="https://example.com/image1.jpg" alt="Jean-François Bayart">
-            <div class="content">
+            <div class="top-section">
+                <img src="https://example.com/image1.jpg" alt="Jean-François Bayart">
                 <div class="name"><a href="#">Jean-François Bayart</a></div>
-                <div class="description">
-                    Professor, Anthropology and Sociology<br>
-                    Yves Oltramare Chair for Religion and Politics in the Contemporary World
-                </div>
+            </div>
+            <div class="description">
+                Professor, Anthropology and Sociology<br>
+                Yves Oltramare Chair for Religion and Politics in the Contemporary World
             </div>
         </div>
         <div class="profile">
-            <img src="https://example.com/image2.jpg" alt="Gopalan Balachandran">
-            <div class="content">
+            <div class="top-section">
+                <img src="https://example.com/image2.jpg" alt="Gopalan Balachandran">
                 <div class="name"><a href="#">Gopalan Balachandran</a></div>
-                <div class="description">
-                    Co-Director, Albert Hirschman Centre on Democracy<br>
-                    Professor, International History and Politics
-                </div>
+            </div>
+            <div class="description">
+                Co-Director, Albert Hirschman Centre on Democracy<br>
+                Professor, International History and Politics
             </div>
         </div>
         <div class="profile">
-            <img src="https://example.com/image3.jpg" alt="Aditya Bharadwaj">
-            <div class="content">
+            <div class="top-section">
+                <img src="https://example.com/image3.jpg" alt="Aditya Bharadwaj">
                 <div class="name"><a href="#">Aditya Bharadwaj</a></div>
-                <div class="description">
-                    Professor, Anthropology and Sociology<br>
-                    Chair, Department of Anthropology & Sociology<br>
-                    Co-Director, Gender Centre
-                </div>
+            </div>
+            <div class="description">
+                Professor, Anthropology and Sociology<br>
+                Chair, Department of Anthropology & Sociology<br>
+                Co-Director, Gender Centre
             </div>
         </div>
     </div>
