@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .profile-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .profile {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 30%;
+            margin: 0 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .profile img {
+            width: 100%;
+            height: auto;
+        }
+        .profile .name {
+            background-color: #f4f4f4;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+        }
+        .profile .name a {
+            color: black;
+            text-decoration: none;
+        }
+        .profile .description {
+            padding: 10px;
+            font-size: 14px;
+            background-color: #fff;
+        }
+    </style>
+    <title>Profile Cards</title>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile">
+            <img src="path/to/image1.jpg" alt="Jean-François Bayart">
+            <div class="name"><a href="#">Jean-François Bayart</a></div>
+            <div class="description">
+                Professor, Anthropology and Sociology<br>
+                Yves Oltramare Chair for Religion and Politics in the Contemporary World
+            </div>
+        </div>
+        <div class="profile">
+            <img src="path/to/image2.jpg" alt="Gopalan Balachandran">
+            <div class="name"><a href="#">Gopalan Balachandran</a></div>
+            <div class="description">
+                Co-Director, Albert Hirschman Centre on Democracy<br>
+                Professor, International History and Politics
+            </div>
+        </div>
+        <div class="profile">
+            <img src="path/to/image3.jpg" alt="Aditya Bharadwaj">
+            <div class="name"><a href="#">Aditya Bharadwaj</a></div>
+            <div class="description">
+                Professor, Anthropology and Sociology<br>
+                Chair, Department of Anthropology & Sociology<br>
+                Co-Director, Gender Centre
+            </div>
+        </div>
+    </div>
+</body>
+</html>
