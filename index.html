@@ -25,7 +25,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             overflow: hidden;
-            width: 30%;
+            width: 45%;
             margin: 0 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             background-color: #fff;
@@ -34,9 +34,11 @@
         }
         .profile .top-section {
             display: flex;
+            background-color: #f4f4f4;
+            align-items: center;
         }
         .profile img {
-            width: 30%;
+            width: 100%;
             height: auto;
         }
         .profile .name {
@@ -44,20 +46,25 @@
             font-size: 18px;
             font-weight: bold;
             text-transform: uppercase;
-            width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f4f4f4;
+            text-align: center;
+            width: 100%;
+            position: relative;
         }
-        .profile .name a {
-            color: black;
-            text-decoration: none;
+        .profile .name::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: red;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
         }
         .profile .description {
             padding: 10px;
             font-size: 14px;
-            background-color: #fff;
+            background-color: #f4f4f4;
         }
     </style>
     <title>Profile Cards</title>
@@ -67,21 +74,20 @@
         <div class="profile">
             <div class="top-section">
                 <img src="Julia C..jpg" alt="Julia Croce">
-                <div class="name"><a href="#">JULIA CROCE</a></div>
             </div>
+            <div class="name">JULIA CROCE</div>
             <div class="description">
-            Visiting Researcher<br>
+                Visiting Researcher<br>
                 AREAS OF EXPERTISE: Political Role of Business, Business and peace- and democracy-building processes, Fragile and Conflict-affected Countries
-
             </div>
         </div>
         <div class="profile">
             <div class="top-section">
-                <img src="Clara-Guardado-Torrez.jpg" alt="Gopalan Balachandran">
-                <div class="name"><a href="#">Clara Guardadon</a></div>
+                <img src="Clara-Guardado-Torrez.jpg" alt="Clara Guardadon">
             </div>
+            <div class="name">CLARA GUARDADON</div>
             <div class="description">
-             Visiting Researcher
+                Visiting Researcher
             </div>
         </div>
     </div>
